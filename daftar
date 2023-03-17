@@ -1,0 +1,118 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://glints.com/id')
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/span_Daftar'))
+
+WebUI.click(findTestObject('Object Repository/Page_Sign Up/p_Daftar dengan Email'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Sign Up/input_Nama depan_firstName'), 'latif')
+
+WebUI.setText(findTestObject('Object Repository/Page_Sign Up/input_Nama Belakang_lastName'), 'arif')
+
+WebUI.setText(findTestObject('Object Repository/Page_Sign Up/input_Email_email'), 'latifarif307@gmail.com')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Sign Up/input_Buat password_password'), '0VdnNFTUZy0PlesXA9x2gg==')
+
+WebUI.click(findTestObject('Object Repository/Page_Sign Up/div_Masukkan lokasimu (Kota  Negara)'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Sign Up/input_Taipei, Taiwan_significant-number-input-1'), '085810647397')
+
+WebUI.click(findTestObject('Object Repository/Page_Sign Up/div_Yes, fill me in on the latest scoops an_e4a3d9'))
+
+WebUI.click(findTestObject('Object Repository/Page_Sign Up/button_Daftar'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/label_Saya terbuka untuk lowongan'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/button_Lanjutkan'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/input_Bagus Apa jenis pekerjaan yang kamu c_ef5d82'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/label_Data Analyst'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/button_Lanjutkan'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/label_Magang'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/input_VND_expectedSalary'), 
+    '6.500.000')
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/input_VND_locations'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/ul_Bangkok, ThailandHo Chi Minh City, Vietn_c6e642'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/input_VND_locations'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/form_Tipe pekerjaanFull-TimeFreelancePart-T_37254e'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/button_Lanjutkan'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/label_Python'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/label_Data Science'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/label_Data Analysis'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/label_SQL'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/label_Analytical Skills'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/button_Lanjutkan'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/button_Lanjutkan'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/label_Saya tidak punya pengalaman kerja'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/button_Lanjutkan'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/input_Terakhir, apa background pendidikan t_3a5dee'), 
+    'Universitas Nas')
+
+WebUI.sendKeys(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/input_Terakhir, apa background pendidikan t_3a5dee'), 
+    Keys.chord(Keys.ENTER))
+
+WebUI.setText(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/input_Universitas Nasional Pasim_degree'), 
+    'Bechalor Of Computer')
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/li_Bechalor Of Computer'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/input_bechalor of computer system_study'), 
+    'Computer Information Systems')
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/ul_Business Information SystemsComputer Inf_e55957'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/input_Math and Computer Information Systems_600c05'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/input_Math and Computer Information Systems_600c05'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/input_Math and Computer Information Systems_600c05'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/div_Terakhir, apa background pendidikan ter_6f0ada'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/input_Math and Computer Information Systems_600c05'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/li_2019'))
+
+WebUI.click(findTestObject('Object Repository/Page_Glints Situs Lowongan Kerja Terbaik di_6c627c/button_Selesai'))
+
+WebUI.closeBrowser()
+
